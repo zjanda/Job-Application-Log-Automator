@@ -22,6 +22,17 @@ Run the program and interact in the terminal. You'll be prompted to provide a jo
 
 ### Setup
 
+You’ll need:
+
+- A Google Sheet (preformatted or templated to your liking)
+- A Google service account with access to the sheet
+- Python 3 and required packages (`gspread`, `oauth2client`, `beautifulsoup`, etc.)
+- API with setting to allow automated changes to a sheet, not just the ability to read one.
+
+Make sure to add your credentials file and adjust the config if needed.
+
+### Sheet Layout
+
 The sheet should start on row 4 (titles, 5 is first data line).
 It should start on column E and go to S with the following headings.
 
@@ -57,14 +68,17 @@ Notes – Any custom notes or observations
 
 Response – Outcome or current status (e.g., ? (meaning waiting for response), Yes, Test, Code Review, Interview, No, etc.)
 
-You’ll need:
+### Required Files
+google-sheet-API.json
+sheet-info.json
 
-- A Google Sheet (preformatted or templated to your liking)
-- A Google service account with access to the sheet
-- Python 3 and required packages (`gspread`, `oauth2client`, `beautifulsoup`, etc.)
-- API with setting to allow automated changes to a sheet, not just the ability to read one.
+The API file info is available online or using AI code generation.
 
-Make sure to add your credentials file and adjust the config if needed.
+The sheet info file should look like this:
+{
+    "sheet_name": "Your Sheet Name",
+    "worksheet_name": "Your Worksheet Name"
+}
 
 ---
 
