@@ -76,11 +76,12 @@ sheet-info.json
 The API file info is available online or using AI code generation.
 
 The sheet info file should look like this:
+```
 {
     "sheet_name": "Your Sheet Name",
-    "worksheet_name": "Your Worksheet Name"
+    "worksheet_name": "Your Worksheet Name" 
 }
-
+```
 ---
 
 ### Future Plans
