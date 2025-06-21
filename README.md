@@ -70,6 +70,7 @@ Response – Outcome or current status (e.g., ? (meaning waiting for response), 
 
 ### Required Files
 google-sheet-API.json
+
 sheet-info.json
 
 The API file info is available online or using AI code generation.
